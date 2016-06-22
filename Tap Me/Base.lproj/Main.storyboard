@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Tap_Me" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oi8-YV-9RJ">
+                                <rect key="frame" x="253" y="60" width="94" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="49A-EO-KJa"/>
+                                    <constraint firstAttribute="height" constant="30" id="6jJ-hl-pPV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.74509803921568629" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7N-Mr-Cby">
+                                <rect key="frame" x="175" y="167" width="250" height="265"/>
+                                <state key="normal" backgroundImage="button_tap_deselected.png"/>
+                                <state key="highlighted" backgroundImage="button_tap_selected.png"/>
+                                <connections>
+                                    <action selector="buttonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ice-QO-gI3"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="checker_top.png" translatesAutoresizingMaskIntoConstraints="NO" id="KmX-pB-Eti">
+                                <rect key="frame" x="0.0" y="6" width="600" height="22"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="checker_bottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="cEu-93-8lG">
+                                <rect key="frame" x="60" y="570" width="480" height="22"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbR-cv-9do">
+                                <rect key="frame" x="227" y="460" width="146" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="Dof-VW-LPl"/>
+                                    <constraint firstAttribute="height" constant="102" id="vuT-IM-xWt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.74509803921568629" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30813215021034313" green="0.67028020244275499" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cEu-93-8lG" secondAttribute="bottom" constant="8" id="6Eb-NJ-mSZ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ZbR-cv-9do" secondAttribute="bottom" constant="38" id="Feb-MU-knt"/>
+                            <constraint firstItem="KmX-pB-Eti" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="6" id="JfF-Iu-Ott"/>
+                            <constraint firstItem="KmX-pB-Eti" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="MUl-qB-yFh"/>
+                            <constraint firstAttribute="centerX" secondItem="ZbR-cv-9do" secondAttribute="centerX" id="Mak-NC-IDb"/>
+                            <constraint firstAttribute="trailing" secondItem="KmX-pB-Eti" secondAttribute="trailing" id="Nn1-O1-Dsv"/>
+                            <constraint firstAttribute="centerY" secondItem="d7N-Mr-Cby" secondAttribute="centerY" id="U33-oQ-PqL"/>
+                            <constraint firstAttribute="centerX" secondItem="d7N-Mr-Cby" secondAttribute="centerX" id="WZl-xG-i3I"/>
+                            <constraint firstItem="KmX-pB-Eti" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="6" id="Zyh-1C-zx9"/>
+                            <constraint firstAttribute="centerX" secondItem="Oi8-YV-9RJ" secondAttribute="centerX" id="a9y-RT-hmt"/>
+                            <constraint firstItem="Oi8-YV-9RJ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="40" id="app-2P-X8F"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cEu-93-8lG" secondAttribute="bottom" id="byf-OA-tg5"/>
+                            <constraint firstAttribute="centerX" secondItem="cEu-93-8lG" secondAttribute="centerX" id="ih7-ae-mbb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KmX-pB-Eti" secondAttribute="trailing" constant="44" id="mbF-26-5Iq"/>
+                            <constraint firstItem="KmX-pB-Eti" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="mu1-BL-h77"/>
+                            <constraint firstAttribute="trailing" secondItem="cEu-93-8lG" secondAttribute="trailing" id="ojZ-1e-ccX"/>
+                            <constraint firstItem="KmX-pB-Eti" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="44" id="qSn-k1-5Rm"/>
+                            <constraint firstItem="cEu-93-8lG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="qnO-hP-8Vw"/>
+                            <constraint firstAttribute="centerX" secondItem="KmX-pB-Eti" secondAttribute="centerX" id="r8g-V2-K2Z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="ZbR-cv-9do" id="s20-1L-GaT"/>
+                        <outlet property="timerLabel" destination="Oi8-YV-9RJ" id="LfC-Kg-bZf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="322"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button_tap_deselected.png" width="250" height="265"/>
+        <image name="button_tap_selected.png" width="250" height="265"/>
+        <image name="checker_bottom.png" width="320" height="23"/>
+        <image name="checker_top.png" width="320" height="22"/>
+    </resources>
+</document>
